@@ -1,0 +1,23 @@
+{
+  "architecture": "UNet",
+  "in_channels": 3,
+  "n_classes": 2,
+  "image_size": 160,
+  "class_labels": {
+    "0": "background",
+    "1": "car"
+  },
+  "weights_file": "best_model.pth",
+  "best_epoch": 10,
+  "val_dice": 0.993314108166477,
+  "test_dice": 0.9932510743448671,
+  "test_iou": 0.9865926340060586,
+  "hyperparameters": {
+    "lr": 0.001,
+    "batch_size": 16,
+    "epochs": 10,
+    "optimizer": "Adam",
+    "scheduler": "CosineAnnealingLR",
+    "loss": "CrossEntropyLoss"
+  }
+}
