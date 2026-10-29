@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-10-29T09:08:57",
+  "device": "cuda",
+  "training_time_sec": 1715.5,
+  "best_epoch": 10,
+  "best_val_dice": 0.993314108166477,
+  "test": {
+    "loss": 0.007079184887652088,
+    "dice": 0.9932510743448671,
+    "iou": 0.9865926340060586,
+    "precision": 0.9935202616476324,
+    "recall": 0.9929820328713901,
+    "pixel_acc": 0.9971786571112204
+  },
+  "dataset_sizes": {
+    "train": 4072,
+    "val": 508,
+    "test": 508
+  },
+  "model": {
+    "architecture": "UNet",
+    "total_params": 7788610,
+    "trainable_params": 7788610,
+    "weights_size_mb": 31.21
+  },
+  "config": {
+    "image_dir": "/content/data/train_raw",
+    "mask_dir": "/content/data/masks_raw",
+    "image_size": 160,
+    "val_split": 0.1,
+    "test_split": 0.1,
+    "num_workers": 2,
+    "in_channels": 3,
+    "n_classes": 2,
+    "batch_size": 16,
+    "lr": 0.001,
+    "epochs": 10,
+    "seed": 42,
+    "metrics_dir": "/content/drive/MyDrive/carvana_unet_results/Metrics",
+    "models_dir": "/content/drive/MyDrive/carvana_unet_results/Models",
+    "wandb_project": "carvana-unet-segmentation",
+    "wandb_entity": null,
+    "wandb_run_name": null,
+    "wandb_mode": "online",
+    "model_artifact_name": "carvana-unet",
+    "registry_path": null,
+    "promote": true
+  }
+}
